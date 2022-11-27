@@ -49,7 +49,7 @@ export default function Contact() {
     }
     try {
       setContact({...contact, loading: true})
-      const response = await axios.post('http://localhost:5000/api/v1/contact', contact)
+      const response = await axios.post('https://clem-portfolio.onrender.com/api/v1/contact', contact)
       const {data} = response
       showMessage(true, false, data.msg)
       setContact({...contact, loading: false})
