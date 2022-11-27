@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply scroll-smooth;
+}
+body { 
+  @apply font-sans bg-darkblue text-white max-w-7xl mx-auto;
+}
+
+section {
+  @apply mx-6 my-24;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif font-semibold tracking-widest;
+}
+
+button {
+  @apply font-semibold tracking-wider;
+}
+
+p {
+  @apply leading-8 tracking-wide;
+}
+
+.mobile-nav {
+  @apply bg-blueishgray absolute z-20 -mt-[6rem] h-screen ease-linear transition-all duration-500;
+}
