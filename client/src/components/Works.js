@@ -8,7 +8,7 @@ export default function Works() {
     <section id="works">
       <SectionHeader text="My Works" />
 
-      <div className="mt-16 grid gap-6 grid-col md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-2 grid gap-6 grid-col md:grid-cols-2 lg:grid-cols-3">
       {works.map((work,i)=>{
         const {img, title, desc, live_link, code_link} = work
         return <Work 

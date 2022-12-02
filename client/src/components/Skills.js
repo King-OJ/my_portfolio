@@ -6,7 +6,7 @@ export default function Skills() {
     <section id="skills">
       <SectionHeader text="My Skills" />
 
-      <div className="mt-10">
+      <div className="mt-2">
         <div className="p-2 border border-blue text-center max-w-md mx-auto">HTML / CSS / JAVASCRIPT </div>
         <div className="mx-auto w-1 bg-blue h-16 my-1"></div>
 

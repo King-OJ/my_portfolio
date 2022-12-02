@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import logo from '../assets/logo.png'
 import { HiMenuAlt3 } from 'react-icons/hi'
 import { VscChromeClose } from "react-icons/vsc";
@@ -7,7 +7,7 @@ export default function Navbar({mobileNav, setMobileNav}) {
 
 
   return (
-    <header id="header" className=" flex items-center justify-between">
+    <header id="header" className="h-20 overflow-hidden bg-darkblue sticky z-30 top-0 flex items-center justify-between">
       <img src={logo} alt="Clem OJ" className="w-64" />
       <nav className='font-semibold mr-6'>
         <button className='z-20' onClick={()=> {setMobileNav(!mobileNav)}}>

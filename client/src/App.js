@@ -8,21 +8,20 @@ export default function App() {
   const [mobileNav, setMobileNav] = useState(false)
 
   return (
-    <>
+    <div className="relative h-full">
     <Navbar mobileNav={mobileNav} setMobileNav={setMobileNav}/>
-    <div className="relative">
-      <MobileNavbar mobileNav={mobileNav} setMobileNav={setMobileNav} />
-      <Hero />
-
-    </div>
+    
+    <MobileNavbar mobileNav={mobileNav} setMobileNav={setMobileNav} />
+   
+    <Hero />
     <About />
     <Skills />
     <Works />
     <Contact />
-    <a href="#header">
+    <a href="#hero" className="hidden md:block">
       <BsArrowUpSquare className="z-index-1 fixed bottom-2 right-6 text-5xl"/>
     </a>
-    </>
+    </div>
   )
 }
 

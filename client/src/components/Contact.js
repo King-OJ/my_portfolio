@@ -67,7 +67,7 @@ export default function Contact() {
   return (
     <section id="contact">
       <SectionHeader text="Contact Me" />
-      <div className="mt-16 flex flex-col w-full md:flex-row md:items-center ">
+      <div className="mt-2 flex flex-col w-full md:flex-row md:items-center ">
         <form className='w-full md:w-[50%]' onSubmit={handleFormSubmit}>
        
           <FormRow name="name" type='text' value={contact.name}  handleChange={handleChange}/>
@@ -80,7 +80,7 @@ export default function Contact() {
           {message.show && <div className={message.error ? "text-center md:text-left text-red mt-6" : "text-green mt-6 text-center md:text-left"}>{message.text}</div>}
 
           <div className='flex justify-center md:justify-start mt-6'>
-            <button type='submit' className='capitalize bg-blue p-2 px-6 rounded-md tracking-widest hover:bg-opacity-70 transition-all duration-200' onSubmit={handleFormSubmit}disabled={contact.loading}>{contact.loading ? "sending" : 'send'}</button>
+            <button type='submit' className='capitalize bg-blue p-2 px-6 rounded-md tracking-widest hover:bg-opacity-70 transition-all duration-200' onSubmit={handleFormSubmit}disabled={contact.loading}>{contact.loading ? "sending..." : 'send'}</button>
           </div>
         </form>
 
