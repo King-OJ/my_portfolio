@@ -10,7 +10,7 @@ body {
 }
 
 section {
-  @apply mx-6 py-14 md:py-0 my-20;
+  @apply mx-6 py-14 md:py-0 md:my-20;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,5 +26,5 @@ p {
 }
 
 .mobile-nav {
-  @apply bg-blueishgray fixed top-10 left-0 z-20 ease-in-out transition-all duration-500 h-full md:hidden;
+  @apply bg-darkblue fixed top-10 left-0 z-20 ease-in-out transition-all duration-500 h-full md:hidden;
 }
