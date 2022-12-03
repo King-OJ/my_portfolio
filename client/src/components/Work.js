@@ -11,8 +11,8 @@ export default function Work({img, title, desc, live_link, code_link}) {
         <div className="my-4">
           <h4 className='text-xl capitalize text-center'>{title}</h4>
           <div className="mt-4 flex justify-between font-semibold">
-            <a href={live_link} target="blank" className="underline text-blue underline-offset-4">View Live Link</a>
-            <a href={code_link} target="blank" className="underline text-blue underline-offset-4">View Code</a>
+            <a href={live_link} target="blank" className="underline text-blue underline-offset-4" rel="noreferrer">View Live Link</a>
+            <a href={code_link} target="blank" className="underline text-blue underline-offset-4" rel="noreferrer">View Code</a>
           </div>
         </div>
 
